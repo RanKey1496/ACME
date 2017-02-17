@@ -1,7 +1,12 @@
 var configApp = function($routeProvider){
-	$routeProvider.when("/home", {
+	$routeProvider
+	.when("/home", {
 		controller: "HomeController",
 		templateUrl: "views/home.html"
+	})
+	.when("/login", {
+		controller: "LoginController",
+		templateUrl: "views/login.html"
 	})
 	.otherwise("/home");
 };
