@@ -11,4 +11,4 @@ var configApp = function($routeProvider){
 	.otherwise("/home");
 };
 
-var app = angular.module("ACME", ["ngRoute"]).config(configApp);
+var app = angular.module("Lemur", ["ngRoute"]).config(configApp);
