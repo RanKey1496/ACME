@@ -1,7 +1,5 @@
-app.controller("HomeController", function($scope, appModel, ){
-	$scope.test = appModel.getHome();
-
-	$scope.login = function(){
-		
+app.controller("HomeController", function($scope, $location){
+	$scope.goToPlaylists = function(){
+		$location.path("/playlists"); 
 	}
 })
