@@ -8,6 +8,10 @@ var configApp = function($routeProvider){
 		controller: "LoginController",
 		templateUrl: "views/login.html"
 	})
+	.when("/playlist", {
+		controller: "PlayListController",
+		templateUrl: "views/playlist.html"
+	})
 	.otherwise("/home");
 };
 

@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="resources/css/client_menu.css">
-<div class="container-fluid">
+<div class="container-fluid" ng-controller="HomeController">
 	<div class="row no-margin">
-		<div class="col-md-12" id="menu-container" ng-controller="HomeController">
+		<div class="col-md-12" id="menu-container">
 			<div class="row no-margin mid-menu">
 				<div class="col-md-6 col-sm-6 col-xs-12 vertical-center-mid" id="menu_2">
 					<div class="row text-center">
@@ -9,7 +9,7 @@
 						<h6 class="menu-title">Lista de canciones</h6>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-6 col-xs-12 vertical-center-mid " id="menu_1" ng-click="goToPlaylists">
+				<div class="col-md-6 col-sm-6 col-xs-12 vertical-center-mid " id="menu_1" ng-click="goToPlaylists()">
 					<div class="row text-center">
 						<img src="resources/img/play-button.png">
 						<h6 class="menu-title">Mis listas de reproduccion</h6>
