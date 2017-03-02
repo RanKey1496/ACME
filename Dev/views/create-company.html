@@ -1,0 +1,40 @@
+<link rel="stylesheet" type="text/css" href="resources/css/add-song.css">
+<div class="container-fluid" ng-controller="CreateCompanyController">
+	<div class="row no-margin">
+		<div class="col-md-12 vertical-center" id="menu-container">
+			<div class="row no-margin full-width">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="title-head">Crear empresa</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-12">
+						<div class="input-field">
+						    <input name="nit" id="nit" type="text" class="white-text" ng-model="nit">
+						    <label for="nit">NIT</label>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="input-field">
+						    <input name="prefix" id="prefix" type="text" class="white-text" ng-model="prefix">
+						    <label for="prefix">Prefijo</label>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="input-field">
+						    <input name="name" id="name" type="text" class="white-text" ng-model="name">
+						    <label for="name">Nombre</label>
+						</div>
+					</div>			
+				</div>
+				<div class="row text-center">
+					<div class="col-md-12">
+						<a class="waves-effect waves-light btn grey darken-2" ng-click="create()">Crear</a>
+						<a class="waves-effect waves-light btn grey darken-2" ng-click="cancel()">Cancelar</a>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>

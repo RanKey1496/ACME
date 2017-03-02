@@ -1,21 +1,24 @@
-$('#table').bootstrapTable({
-    columns: [{
-        field: 'id',
-        title: 'Item ID'
-    }, {
-        field: 'name',
-        title: 'Item Name'
-    }, {
-        field: 'price',
-        title: 'Item Price'
-    }],
-    data: [{
-        id: 1,
-        name: 'Item 1',
-        price: '$1'
-    }, {
-        id: 2,
-        name: 'Item 2',
-        price: '$2'
-    }]
-});
+/*$("#table").bootstrapTable({
+        url:'http://lemurbackend.herokupp.com/playlist/getAll?token=' + localStorage.getItem('token'),
+        search: true,
+        pagination: true,
+        columns:[
+            {title:"Codigo", field:"id"},
+            {title:"Nombre", field:"name", editable: true}],
+        onLoadSuccess: function (data) {
+            toggle();
+            getSession();
+        }
+    });*/
+
+/*$.ajax({
+    url:   'http://lemurbackend.herokupp.com/playlist/getAll?token=' + localStorage.getItem('token'),
+    type:  'post',
+    success:  function (response) {
+        console.log(response.data);
+        var jsonResponse = JSON.parse(response);
+        $('#table').bootstrapTable({
+            data: response.data.message
+        });
+    }
+});*/

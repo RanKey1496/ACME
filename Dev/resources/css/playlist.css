@@ -1,3 +1,52 @@
+body{
+	background-color: #131313;
+	padding: 0 !important;
+}
+
+.full-width{
+	min-width: 100%;
+	width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .btn{margin-top: 20px;}
+}
+
+.color{
+	background-color: green;
+}
+
+.input-field label {
+     color: #fb8c00  ;
+}
+
+.input-field input{
+	border-bottom: 1px solid #616161  ;
+     box-shadow: 0 1px 0 0 #616161   ;
+}
+
+.input-field input + label{
+	color: #616161;
+}
+
+.input-field input[type=text]:focus + label {
+     color: #fb8c00  ;
+}
+
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid #fb8c00  ;
+     box-shadow: 0 1px 0 0 #fb8c00  ;
+}
+
+.input-field input[type=number]:focus + label {
+     color: #fb8c00  ;
+}
+
+.input-field input[type=number]:focus {
+     border-bottom: 1px solid #fb8c00  ;
+     box-shadow: 0 1px 0 0 #fb8c00  ;
+}
+
 .no-margin{
 	margin-bottom: 0px;
 }

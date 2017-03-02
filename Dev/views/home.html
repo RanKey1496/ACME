@@ -3,27 +3,27 @@
 	<div class="row no-margin">
 		<div class="col-md-12" id="menu-container">
 			<div class="row no-margin mid-menu">
-				<div class="col-md-6 col-sm-6 col-xs-12 vertical-center-mid" id="menu_2">
+				<div class="col-md-6 col-sm-6 col-xs-12 vertical-center-mid" id="menu_1" ng-click="createSong()">
 					<div class="row text-center">
 						<img src="resources/img/list.png">
-						<h6 class="menu-title">Lista de canciones</h6>
+						<h6 class="menu-title">Subir canción</h6>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-6 col-xs-12 vertical-center-mid " id="menu_1" ng-click="goToPlaylists()">
+				<div class="col-md-6 col-sm-6 col-xs-12 vertical-center-mid " id="menu_2" ng-click="goToPlaylists()">
 					<div class="row text-center">
 						<img src="resources/img/play-button.png">
-						<h6 class="menu-title">Mis listas de reproduccion</h6>
+						<h6 class="menu-title">Crear listas de reproduccion</h6>
 					</div>
 				</div>
 			</div>
-			<div class="row no-margin mid-menu">
+			<div class="row no-margin mid-menu" id="menu_4" ng-click="createCompany()">
 				<div class="col-md-6 col-sm-6 col-xs-12 vertical-center-mid ">
 					<div class="row text-center">
-						<img src="resources/img/list.png">
-						<h6 class="menu-title">Lista de canciones</h6>
+						<img src="resources/img/user.png">
+						<h6 class="menu-title">Crear cliente</h6>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-6 col-xs-12 vertical-center-mid " id="menu_3">
+				<div class="col-md-6 col-sm-6 col-xs-12 vertical-center-mid " id="menu_3" ng-click="logOut()">
 					<div class="row text-center">
 						<img src="resources/img/error.png">
 						<h6 class="menu-title">Cerrar Sesión</h6>

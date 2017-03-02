@@ -6,9 +6,10 @@ app.controller("LoginController", function($scope, $http, $location){
 
 		if (username.trim() && password.trim()) {
 			var params = {'username':username, 'password':password};
-			$http.post("http://localhost:3000/signin", params).
+			$http.post("https://lemurbackend.herokuapp.com/signin", params).
 	        then(function(response){
 	        	if (response.data.success == true) {
+	        		localStorage.setItem("token", response.data.message);
 	        		$location.path("/home"); 
 	        	} else {
 	        		alert("Usuario o contraseña invalidos");

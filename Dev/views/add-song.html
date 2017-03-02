@@ -1,0 +1,64 @@
+<link rel="stylesheet" type="text/css" href="resources/css/add-song.css">
+<div class="container-fluid" ng-controller="AddSongController">
+	<div class="row no-margin">
+		<div class="col-md-12 vertical-center" id="menu-container">
+			<div class="row no-margin full-width">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="title-head">Subir canción</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-12">
+						<div class="input-field">
+						    <input name="name" id="name" type="text" class="white-text" ng-model="name">
+						    <label for="name">Nombre de la cancion</label>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="input-field">
+						    <input name="artist" id="artist" type="text" class="white-text" ng-model="artist">
+						    <label for="artist">Artista</label>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="input-field">
+						    <input name="duration" id="duration" type="number" class="white-text" ng-model="duration">
+						    <label for="duration">Duración</label>
+						</div>
+					</div>				
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<div class="input-field">
+						    <input name="album" id="album" type="text" class="white-text" ng-model="album">
+						    <label for="album">Album</label>
+						</div>
+					</div>	
+					<div class="col-md-6 col-sm-12">
+						<div class="file-field input-field">
+			                  <div>
+			                     <input type="file" 
+							               ngf-select 
+							               ng-model="file" 
+							               name="file"
+							               accept=".mp3" 
+							               ngf-max-size="20MB" 
+							               />
+			                  </div>
+			                  <div class="file-path-wrapper">
+			                     <input class="file-path validate" type="text" placeholder="Subir archivo">
+			                  </div>
+			               </div>					
+					</div>	
+				</div>
+				<div class="row text-center">
+					<div class="col-md-12 full-width">
+						<a class="waves-effect waves-light btn grey darken-2" ng-click="upload()">Subir</a>
+						<a class="waves-effect waves-light btn grey darken-2" ng-click="cancel()">Cancelar</a>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
